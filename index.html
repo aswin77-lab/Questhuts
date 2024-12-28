@@ -28,7 +28,6 @@
 
   
 </head>
-
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
@@ -53,7 +52,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href=" https://aswinanil775.github.io/quest/">Get Started</a>
 
     </div>
   </header>
@@ -69,10 +68,12 @@
         <div class="row">
           <div class="col-lg-6">
             <h2 data-aos="fade-up" data-aos-delay="100">Empowering Innovation with Quest Huts</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We are a team of passionate students creating impactful projects for academic and professional success.</p>            
+            <p data-aos="fade-up" data-aos-delay="200">We are a team of passionate students creating impactful projects for academic and professional success. 
+              We are also a product-based company specializing in real estate and more. 
+              To know more, click on the Get Started Button</p>            
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.instagram.com/quest_huts/profilecard/?igsh=MjVhc2s4cjhjd211" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a href=" https://aswinanil775.github.io/quest/" class="btn-get-started">Get Started</a>
+              <a href="/homevid1.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
 
           </div>
@@ -102,25 +103,25 @@
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-briefcase"></i>
-                <h4><a href="" class="stretched-link">Project Opportunities</a></h4>
+                <h4><a href="https://wa.me/917994202052?text=Hello%20Quest%20Huts%20Team,%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="stretched-link">Project Opportunities</a></h4>
                 <p>We offer hands-on project experiences to help students build practical skills and enhance their knowledge.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-gem"></i>
-                <h4><a href="" class="stretched-link">Internship Programs</a></h4>
+                <h4><a href="https://wa.me/917994202052?text=Hello%20Quest%20Huts%20Team,%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="stretched-link">Internship Programs</a></h4>
                 <p>Our internship programs provide real-world exposure, mentorship, and career growth opportunities for students.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-broadcast"></i>
-                <h4><a href="" class="stretched-link">Skill Development(upcoming)</a></h4>
-                <p>At Quest Huts, we emphasize skill-building and provide a platform for students to showcase their talent.</p>
+                <h4><a href="https://aswinanil775.github.io/quest/" class="stretched-link">Our Products</a></h4>
+                <p>At Quest Huts, we offer a comprehensive platform where people can buy, rent, or sell houses and plots. We also provide house maintenance and legal services to make your real estate journey seamless.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
                 <i class="bi bi-easel"></i>
-                <h4><a href="" class="stretched-link">Career Support(Upcoming)</a></h4>
+                <h4><a href="https://wa.me/917994202052?text=Hello%20Quest%20Huts%20Team,%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="stretched-link">Career Support(Upcoming)</a></h4>
                 <p>We’re dedicated to guiding students toward successful careers through knowledge-sharing and professional development.</p>
               </div><!-- Icon-Box -->
 
@@ -430,6 +431,30 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+  <script>
+    // Function to fetch the content of notification.html and show it as an alert
+    function showNotification() {
+      fetch('notification.html')
+        .then(response => response.text())
+        .then(html => {
+          // Extract notification content from the fetched HTML
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = html;
+          const notification = tempDiv.querySelector('#appNotification')?.innerText || 
+                               '(Coming Soon) Download the QuestHuts App now from Google Play Store.';
+
+          // Display the content as an alert
+          alert(notification);
+        })
+        .catch(error => {
+          console.error('Error fetching notification:', error);
+        });
+    }
+
+    // Show the notification after 15 seconds
+    setTimeout(showNotification, 15000);
+  </script>
 </body>
 
 </html>
